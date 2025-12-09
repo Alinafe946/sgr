@@ -1,0 +1,340 @@
+/* Universal Styles */
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+/* Navigation Styles */
+#nav {
+    width: 100%;
+    padding: 10px 0 10px 10px;
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    background-color: black;
+    z-index: 1000;
+}
+
+#nav ul {
+    list-style: none;
+    margin: auto;
+    float: inline-end;
+    padding: 5px 0px;
+}
+
+#nav ul li {
+    padding: 0px 0px;
+    display: inline-block;
+    margin: 20px;
+}
+
+#nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+#nav ul li a:hover {
+    color: blue;
+    background-color: gray;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+/* Header Styles */
+#head {
+    width: 100%;
+    font-size: 2em;
+    text-align: center;
+    color: white;
+    padding: 20px 10px;
+}
+
+/* Index page specific head */
+#head h1, #head h3 {
+    margin: 10px 0;
+}
+
+#head p {
+    text-align: left;
+    margin: 10px;
+    font-size: 1em;
+}
+
+/* Different heights for different pages */
+.head-home {
+    height: 200px;
+    background-color: blue;
+}
+
+.head-about {
+    height: 700px;
+    background-image: url(img/young.jpg);
+    background-size: cover;
+}
+
+.head-developer {
+    height: 700px;
+    background-image: url(img/wa.jpg);
+    background-size: cover;
+}
+
+/* Content Styles */
+#content {
+    width: 100%;
+    height: auto;
+    padding: 20px;
+}
+
+#content table {
+    width: 100%;
+    height: auto;
+}
+
+#content section {
+    width: 500px;
+    height: 50px;
+    margin: 20px auto;
+    padding: 20px;
+    text-align: left;
+    background-color: blueviolet;
+}
+
+#content section a {
+    text-decoration: none;
+    color: white;
+    font-size: 2em;
+}
+
+/* Content with specific background for about and dev pages */
+#content.bg-cyan {
+    background-color: cyan;
+    height: 300px;
+    text-align: center;
+}
+
+#content.bg-cyan h2 {
+    color: black;
+}
+
+#content.bg-cyan table {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+#content.bg-cyan td, #content.bg-cyan th {
+    text-align: center;
+    vertical-align: middle;
+}
+
+/* Developer content styles */
+#content.dev-content {
+    background-color: cyan;
+    height: 200px;
+    text-align: center;
+}
+
+/* Icon styles */
+#icon {
+    width: 100px;
+    height: 205px;
+    font-size: 1.1em;
+    text-align: center;
+    background-color: gray;
+}
+
+/* Footer Styles */
+#footer {
+    width: 100%;
+    height: 200px;
+    color: white;
+    background-color: blue;
+    padding: 20px 0;
+}
+
+#footer i {
+    color: white;
+    font-size: 30px;
+    margin: 10px;
+    float: right;
+}
+
+#footer i:hover {
+    color: green;
+    background-color: white;
+    border-radius: 50px;
+}
+
+#footer h2, #footer a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.5em;
+    text-align: left;
+}
+
+#footer p {
+    text-align: center;
+    color: white;
+}
+
+/* Search Form Styles */
+#searchForm {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#searchForm input {
+    padding: 8px 12px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#searchForm button {
+    padding: 8px 16px;
+    background-color: blue;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+#searchForm button:hover {
+    background-color: darkblue;
+}
+
+/* Song page styles (mcode pages) */
+body.song-page {
+    font-family: Arial, sans-serif;
+    background: #f8f8ff;
+    text-align: center;
+}
+
+.song-container {
+    margin: 60px auto;
+    padding: 30px;
+    background: rgba(0, 255, 255, 1);
+    border-radius: 10px;
+    box-shadow: 0 2px 100px rgba(0, 0, 255, 1);
+    max-width: 400px;
+}
+
+.song-container h2 {
+    color: black;
+    margin-top: 0;
+}
+
+.song-container img {
+    width: 50%;
+    border-radius: 30px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
+
+.song-container audio {
+    width: 100%;
+    margin: 15px 0;
+}
+
+.song-container button {
+    background: blueviolet;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 16px;
+    cursor: pointer;
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+.song-container button:hover {
+    background: purple;
+}
+
+.song-container a {
+    display: inline-block;
+    margin: 10px 5px;
+}
+
+.song-container a[style*="color:blueviolet"] {
+    text-decoration: none;
+}
+
+.back-button {
+    color: blueviolet;
+    text-decoration: none;
+}
+
+/* Logo Styles */
+#logo {
+    height: 50px;
+    margin-right: 20px;
+    vertical-align: middle;
+}
+
+/* General text styles */
+span {
+    display: inline;
+}
+
+/* Table styles */
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    padding: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    #nav ul li {
+        margin: 10px;
+        font-size: 14px;
+    }
+
+    #nav ul li a {
+        font-size: 16px;
+    }
+
+    #content section {
+        width: 80%;
+    }
+
+    #head {
+        font-size: 1.5em;
+    }
+
+    .song-container {
+        margin: 80px auto 60px;
+        max-width: 90%;
+        padding: 20px;
+    }
+}
+
+@media (max-width: 600px) {
+    body {
+        font-size: 16px;
+        padding: 10px;
+    }
+    table {
+        width: 100%;
+        font-size: 14px;
+        overflow-x: auto;
+        display: block;
+    }
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+    .container, .content, .header, .footer {
+        width: 100%;
+        padding: 0 5px;
+        box-sizing: border-box;
+    }
+}
+

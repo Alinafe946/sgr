@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+
+<html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+        <link rel="stylesheet" href="styles.css">
+
+        <title>SGR-Home</title>
+    </head>
+
+    <body>
+        <header id="nav">  
+            <img src="Play.jpg" alt="Logo" id="logo" title="SGR logo">
+            <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="mailto:youngmussamsamali@gmail.com">Send Us Email <i class="fas fa-envelope"></i></a></li>
+                <li><form id="searchForm" style="text-align:center; margin-bottom:20px;">
+        <input type="text" id="searchInput" placeholder="Search for a song or artist...">
+        <button type="submit">Search</button>
+    </form><li>
+
+            </ul>
+            </nav>
+
+        </header>
+        <br> <br> <br> <br>
+        <div id="head">
+            <h1>Welcome to SGR Music.org</h1>
+            <h3>Stream And Download Latest Music Here.</h3>
+
+        </div>
+        <br><br><br>
+
+        <div id="content">
+
+             <div id="songsList">
+
+       <table>
+        <tr>
+            <td>
+
+        <div class="song-item">
+            <section>
+            <a href="/mcode/gonjesa.html">Muyombe- Gonjesa</a>
+        </section>
+        </div>
+    </td>
+    <td>
+
+        <div class="song-item">
+            <section>
+            <a href="/mcode/ndimakumbukira.html">PVAB pemphero ft Lonex-Ndimakumbukira</a>
+        </section>
+        </div>
+    </td>
+        </tr>
+        <tr>
+            <td>
+                <div class="song-item">
+                    <section>
+            <a href="/mcode/umenibeba.html">Tong G ft Loxy B- Umenibeba</a>
+        </section>
+                </div>
+            </td>
+            <td>
+                <div class="song-item">
+                    <section>
+            <a href="/mcode/drillPakwawo.html">Yashie Mond- Drill Pakwawo</a>
+        </section>
+
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <div class="song-item">
+                    <section>
+            <a href="/mcode/pachiweekend.html">Yashie Mond X Man Reu- Pa chiweekend</a>
+        </section>
+                </div>
+            </td>
+            <td>
+                <div class="song-item">
+                    <section>
+            <a href="/mcode/phokoso.html">Yashie Mond- Phokoso</a>
+        </section>
+
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <div class="song-item">
+                    <section>
+            <a href="/mcode/anakonda.html">Matt The Kid ft Yashie Mond- Anakonda</a>
+        </section>
+                </div>
+            </td>
+            <td>
+                <div class="song-item">
+                    <section>
+            <a href="/mcode/landLady.html">21Gennah- Landlady</a>
+        </section>
+
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <div class="song-item">
+                    <section>
+            <a href="/mcode/muzitolere.html">Calc Dee ft Yashie Mond- Muzitolere</a>
+        </section>
+                </div>
+            </td>
+            <td>
+                <div class="song-item">
+                    <section>
+            <a href="/mcode/turnUp.html">Yashie Mond- Turn Up</a>
+        </section>
+
+                </div>
+            </td>
+        </tr>
+        
+       </table>
+            </div>
+
+        </div>
+        <br><br><br>
+         
+        <footer id="footer">
+            <a href="https://www.facebook.com/profile.php?id=100076480629418" target="_blank">
+  <i class="fab fa-facebook"></i>
+</a>
+<a href="https://wa.me/0999 48 69 88" target="_blank">
+  <i class="fab fa-whatsapp"></i>
+</a>
+<a href="https://www.instagram.com/youn.gmussamsamali?igsh=MWZyOXA4NHVnZXh6NQ==" target="_blank">
+  <i class="fab fa-instagram"></i>
+</a>
+<a href="https://x.com/yourprofile" target="_blank">
+  <i class="fab fa-x-twitter"></i>
+</a>
+<a href="index.html"><h2>SGR Music.org</h2></a>
+<p style="text-align: center;"><a href="dev.html">About the developer</a></p>
+
+<br><br>
+<p>Copyright &copy; SGR Music.org 2025 All Rights Reserved</p>
+
+        </footer>
+
+        <script>
+                 // Searching for songs that are listed in div's above functionality//
+document.getElementById('searchForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+    var query = document.getElementById('searchInput').value.toLowerCase();
+    var items = document.querySelectorAll('.song-item');
+    var found = false;
+    items.forEach(function(item) {
+        var text = item.textContent.toLowerCase();
+        if (text.includes(query) || query === "") {
+            item.style.display = "";
+            found = true;
+        } else {
+            item.style.display = "none";
+        }
+    });
+    if (!found && query !== "") {
+        alert('No match found!');
+    }
+});
+         
+        </script>
+    </body>
+</html>
